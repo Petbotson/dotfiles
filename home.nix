@@ -44,6 +44,7 @@
     file
     which
     tree
+    spotify # spotify music service
 
     btop  # replacement of htop/nmon
     iotop # io monitoring
