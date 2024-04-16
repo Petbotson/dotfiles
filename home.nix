@@ -75,14 +75,14 @@
   # Let home Manager install and manage itself.
   programs.home-manager.enable = true;
   
-  # Git Config using home-manager
-  # programs.git = {
-  #  enable = true;
-  #  userName = "Vincent Schwalbach";
-  #  userEmail = "mail@vincent-schwalbach.de";
-  #  extraConfig = {
-  #    init.defaultBranch = "main";
-  #  };
-  #};
+  # git config using home-manager
+  programs.git = {
+    enable = true;
+    userName = "Vincent Schwalbach";
+    userEmail = "mail@vincent-schwalbach.de";
+    extraConfig = {
+      init.defaultBranch = "main";
+    };
+  };
 
 }
