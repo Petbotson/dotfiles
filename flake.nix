@@ -28,7 +28,7 @@
           {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
-            home-manager.users.vincent = import ./home.nix;
+            home-manager.users.vincent = import "./home.nix";
 	};
       ];
     };
