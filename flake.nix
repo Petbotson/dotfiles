@@ -1,10 +1,9 @@
 {
-  description = "A simple NixOS flake";
+  description = "NixOS configuration";
 
   inputs = {
-    # NixOS official package source, using the nixos-23.11 branch here
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-23.11";
-
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-23.11";
+    # home-manager, used for managing user configuration
     home-manager = {
       url = "github:nix-community/home-manager/release-23.11";
       # The `follows` keyword in inputs is used for inheritance.
@@ -15,22 +14,26 @@
     };
   };
 
-  outputs = { self, nixpkgs, home-manager, ... }@inputs: {
-    nixosConfigurations = { 
+  outputs = inputs@{ nixpkgs, home-manager, ... }: {
+    nixosConfigurations = {
+      # TODO please change the hostname to your own
       vs-nb = nixpkgs.lib.nixosSystem {
-      system = "x86_64-linux";
-      modules = [
-        ./configuration.nix
+        system = "x86_64-linux";
+        modules = [
+          ./configuration.nix
 
-        # make home-manager as a module of nixos
-        # so that home-manager configuration will be deployed automatically when executing `nixos-rebuild switch`
-        home-manager.nixosModules.home-manager
-        {
-          home-manager.useGlobalPkgs = true;
-          home-manager.useUserPackages = true;
-          home-manager.users.vincent = import ./home.nix;
-	}
-      ];
+          # make home-manager as a module of nixos
+          # so that home-manager configuration will be deployed automatically when executing `nixos-rebuild switch`
+          home-manager.nixosModules.home-manager
+          {
+            home-manager.useGlobalPkgs = true;
+            home-manager.useUserPackages = true;
+            home-manager.users.vincent = import ./home.nix;
+
+            # Optionally, use home-manager.extraSpecialArgs to pass arguments to home.nix
+          }
+        ];
+      };
     };
   };
 }
