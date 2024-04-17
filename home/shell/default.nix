@@ -5,5 +5,6 @@
 in {
   imports = [
     ./starship.nix
+    ./zsh.nix
   ];
 }
