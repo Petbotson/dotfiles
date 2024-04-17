@@ -1,5 +1,4 @@
 { pkgs, ... }: {
-  home.packages = with pkgs;
 
   programs.zsh = {
     enable = true;
@@ -16,4 +15,5 @@
       enable = true;
       plugins = [ "terraform" ];
     };
+  };
 }
