@@ -7,9 +7,9 @@
     syntaxHighlighting.enable = true;
     };
 
-    shellAliases = {
-      ll = "ls-lah";
-    };
+#    shellAliases = {
+#      ll = "ls-lah";
+#    };
 
 #    oh-my-zsh = {
 #      enable = true;
