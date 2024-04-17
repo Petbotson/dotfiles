@@ -1,5 +1,5 @@
 { pkgs, ... }: {
-  home.packages = with pkgs;
+  home.packages = [pkgs.gh];
 
   # git config using home-manager
   programs.git = {
