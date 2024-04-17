@@ -1,4 +1,4 @@
-{ pkgs, ... }: {
+{ pkgs, home-manager, lib, ... }: {
 
   programs.zsh = {
     enable = true;
