@@ -1,5 +1,5 @@
 {
-  description = "NixOS configuration";
+  description = "Petbotson's NixOS configuration";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-23.11";
@@ -14,23 +14,21 @@
     };
   };
 
-  outputs = inputs@{ nixpkgs, home-manager, ... }: {
+  outputs = inputs@{ self, nixpkgs, home-manager, ... }: {
     nixosConfigurations = {
-      # TODO please change the hostname to your own
       vs-nb = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
-        modules = [
-          ./configuration.nix
 
-          # make home-manager as a module of nixos
-          # so that home-manager configuration will be deployed automatically when executing `nixos-rebuild switch`
+        modules = [
+          ./hosts/vs-nb
+
           home-manager.nixosModules.home-manager
           {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
-            home-manager.users.vincent = import ./home.nix;
 
-            # Optionally, use home-manager.extraSpecialArgs to pass arguments to home.nix
+            home-manager.extraSpecialArgs = inputs;
+            home-manager.users.vincent = import ./home;
           }
         ];
       };
