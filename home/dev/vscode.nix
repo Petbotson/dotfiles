@@ -8,6 +8,5 @@
       #vscodevim.vim
       #yzhang.markdown-all-in-one
     ];
-  };
- };
+   };
 }
