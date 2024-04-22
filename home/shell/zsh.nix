@@ -5,7 +5,7 @@
     enableAutosuggestions = true;
     enableCompletion = true;
     syntaxHighlighting.enable = true;
-    };
+#    };
 
     shellAliases = {
       ll = "ls  -lah";
@@ -15,4 +15,5 @@
 #      enable = true;
 #      plugins = [ "terraform" ];
 #    };
+   };
 }
