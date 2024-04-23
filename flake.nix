@@ -29,10 +29,6 @@
             home-manager.extraSpecialArgs = inputs;
             home-manager.users.vincent = import ./home;
           }
-          hyprland.homeManagerModules.default
-          {
-            wayland.windowManager.hyprland.enable = true;
-          }
         ];
       };
     };
