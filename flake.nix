@@ -12,7 +12,7 @@
     };
   };
 
-  outputs = inputs@{ self, nixpkgs, home-manager, ... }: {
+  outputs = inputs@{ self, nixpkgs, home-manager, hyprland, ... }: {
     nixosConfigurations = {
       vs-nb = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
@@ -27,6 +27,10 @@
 
             home-manager.extraSpecialArgs = inputs;
             home-manager.users.vincent = import ./home;
+          }
+          hyprland.homeManagerModules.default
+          {
+            wayland.windowManager.hyprland.enable = true;
           }
         ];
       };
