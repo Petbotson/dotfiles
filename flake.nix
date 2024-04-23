@@ -20,6 +20,7 @@
 
         modules = [
           ./hosts/vs-nb
+          ./modules
 
           home-manager.nixosModules.home-manager
           {
