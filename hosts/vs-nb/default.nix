@@ -48,7 +48,11 @@
     LC_TELEPHONE = "de_DE.UTF-8";
     LC_TIME = "de_DE.UTF-8";
   };
-
+  
+  # Enabling Hyprland
+  programs.hyprland.enable = true;
+  programs.hyprland.package = inputs.hyprland.packages."${pkgs.system}".hyprland;
+  
   # Enable the X11 windowing system.
   services.xserver.enable = true;
 
