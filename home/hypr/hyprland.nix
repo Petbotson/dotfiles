@@ -35,7 +35,6 @@
       };
 
       general = {
-        "$mod" = "mod4";
         layout = "dwindle";
         gaps_in = 0;
         gaps_out = 0;
@@ -128,6 +127,8 @@
         ];
       };
 
+      "$mod" = "SUPER";
+      
       bind = [
         # show keybinds list
         "$mod, F1, exec, show-keybinds"
