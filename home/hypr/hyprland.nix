@@ -5,7 +5,6 @@
     enable = true;
     xwayland = {
       enable = true;
-      hidpi = true;
     };
   
     # here goes the Hyprland Configuration
