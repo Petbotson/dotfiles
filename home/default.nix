@@ -4,7 +4,7 @@
 
   imports = [
     ./dev
-    ./hyprland
+    ./hypr
     ./programs
     ./shell
   ];
