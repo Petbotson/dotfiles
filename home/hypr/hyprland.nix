@@ -73,10 +73,10 @@
       };
 
       decoration = {
-        rounding = 0;
-        # active_opacity = 0.90;
-        # inactive_opacity = 0.90;
-        # fullscreen_opacity = 1.0;
+        rounding = 5;
+        active_opacity = 0.90;
+        inactive_opacity = 0.90;
+        fullscreen_opacity = 1.0;
 
         blur = {
           enabled = true;
@@ -93,7 +93,6 @@
         };
 
         drop_shadow = true;
-
         shadow_ignore_window = true;
         shadow_offset = "0 2";
         shadow_range = 20;
