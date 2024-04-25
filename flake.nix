@@ -13,19 +13,13 @@
     };
   };
 
-  outputs = inputs@{ self, nixpkgs, nixpkgs-unstable, home-manager, hyprland, ... }: 
-    let
-      system = "x86_64-linux";
-      lib = nixpkgs.lib;
-      pkgs = nixpkgs.legacyPackages.${system};
-      pkgs-unstable = nixpkgs-unstable.legacyPackages.${system};
-    in {
+  outputs = inputs@{ self, nixpkgs, nixpkgs-unstable, home-manager, hyprland, ... }: {
     nixosConfigurations = {
-      vs-nb = lib.nixosSystem {
-        inherit system;
-        specialArgs = {
-          inherit pkgs-unstable;
-        };
+      vs-nb = nixpkgs.lib.nixosSystem {
+        system = "x86_64-linux";
+        specialArgs = { 
+          inherit inputs; 
+          };
 
         modules = [
           ./hosts/vs-nb
