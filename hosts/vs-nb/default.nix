@@ -99,7 +99,6 @@
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
-  nixpkgs.config.allowUnfreePredicate = (_: true);
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
