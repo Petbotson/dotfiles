@@ -13,11 +13,19 @@
     };
   };
 
-  outputs = inputs@{ self, nixpkgs, nixpkgs-unstable, home-manager, hyprland, ... }: {
+  outputs = inputs@{ self, nixpkgs, nixpkgs-unstable, home-manager, hyprland, ... }: 
+    let
+      system = "x86_64-linux";
+      lib = nixpkgs.lib;
+      pkgs = nixpkgs.legacyPackages.${system};
+      pkgs-unstable = nixpkgs-unstable.legacyPackages.${system};
+    in {
     nixosConfigurations = {
-      vs-nb = nixpkgs.lib.nixosSystem {
-        system = "x86_64-linux";
-        specialArgs = { inherit inputs; };
+      vs-nb = lib.nixosSystem {
+        inherit system;
+        specialArgs = {
+          inherit pkgs-unstable;
+        };
 
         modules = [
           ./hosts/vs-nb
@@ -27,7 +35,6 @@
           {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
-
             home-manager.extraSpecialArgs = inputs;
             home-manager.users.vincent = import ./home;
           }
