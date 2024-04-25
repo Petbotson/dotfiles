@@ -7,5 +7,6 @@
     tree
     spotify # spotify music service
     neofetch
+    signal-desktop
   ];
 }
