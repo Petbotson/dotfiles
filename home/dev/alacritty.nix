@@ -1,8 +1,9 @@
-{ pkgs-unstable, ... }:
+{ pkgs, ... }:
 
 {
   programs.alacritty = {
     enable = true;
+    package = unstable;
     settings = {
       window.opacity = 0.95;
       window.dynamic_padding = true;
