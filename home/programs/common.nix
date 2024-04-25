@@ -5,7 +5,7 @@
     file
     which
     tree
-    spotify # spotify music service
+#    spotify
     neofetch
     signal-desktop
   ];
