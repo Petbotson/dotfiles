@@ -10,9 +10,9 @@
       ll = "ls  -lah";
     };
 
-    oh-my-zsh = {
-      enable = true;
-      plugins = [ "terraform" ];
-    };
-  };
+#    oh-my-zsh = {
+#      enable = true;
+#      plugins = [ "git" "terraform" ];
+#    };
+#  };
 }
