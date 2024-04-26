@@ -3,6 +3,6 @@
     programs.oh-my-posh = {
         enable = true;
         enableZshIntegration = true;
-        usetheme = catppuccin_mocha;
+        usetheme = [ "catppuccin_mocha" ];
     };
 }
