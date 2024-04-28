@@ -9,6 +9,7 @@
     neofetch
     signal-desktop
     obsidian
+    bitwarden-desktop
 
     # dev and infra stuff
     terraform
