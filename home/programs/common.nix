@@ -8,5 +8,6 @@
     spotify
     neofetch
     signal-desktop
+    terraform
   ];
 }

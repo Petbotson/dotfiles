@@ -1,6 +1,6 @@
 {
   imports = [
-    ./cachix
+    ./cachix.nix
     ./tuxedo-rs.nix
   ];
 }
