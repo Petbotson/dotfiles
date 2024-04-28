@@ -8,6 +8,10 @@
     spotify
     neofetch
     signal-desktop
+    obsidian
+
+    # dev and infra stuff
     terraform
+    hugo
   ];
 }
