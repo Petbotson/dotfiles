@@ -5,5 +5,6 @@
     ./networktools.nix
     ./programs.nix
     ./systools.nix
+    ./thunderbird.nix
   ];
 }
