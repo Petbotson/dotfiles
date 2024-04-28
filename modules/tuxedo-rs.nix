@@ -1,6 +1,6 @@
 { pkgs, ... }:
 {
-    programs.tuxedo-rs = {
+    hardware.tuxedo-rs = {
         enable = true;
         tailor-gui = {
             enable = true;
