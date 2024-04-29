@@ -10,6 +10,7 @@
     signal-desktop
     obsidian
     bitwarden-desktop
+    mailspring
 
     # dev and infra stuff
     terraform
