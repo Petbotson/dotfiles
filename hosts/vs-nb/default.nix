@@ -95,7 +95,6 @@
     isNormalUser = true;
     description = "Vincent Schwalbach";
     extraGroups = [ "networkmanager" "wheel" ];
-    shell = pkgs.zsh;
     packages = with pkgs; [
     ];
   };
