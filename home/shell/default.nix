@@ -4,8 +4,8 @@
   cache = config.xdg.cacheHome;
 in {
   imports = [
-    ./oh-my-posh.nix
-#    ./starship.nix
+#    ./oh-my-posh.nix
+    ./starship.nix
     ./zsh.nix
   ];
 }
