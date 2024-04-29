@@ -11,7 +11,7 @@
     obsidian
     bitwarden-desktop
     mailspring
-#    nextcloud-client
+    nextcloud-client
 
     # dev and infra stuff
     terraform
