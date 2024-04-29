@@ -5,11 +5,11 @@
 </div>
 
 <h1 align="center">
-<a href='#'><img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/palette/macchiato.png" width="600px"/></a>
+</a>
   <br>
   <div>
-    <a href="https://github.com/Petbotson/dotfiles>
-        <img src="">
+    <a href="https://github.com/NixOS/nixpkgs/tree/nixos-unstable">
+        <img src="https://img.shields.io/badge/nixpkgs-unstable-black?style=for-the-badge&logo=nixos&color=c0a1fb">
     </a>
     <a href="https://github.com/Petbotson/dotfiles/stargazers">
         <img src="https://img.shields.io/github/stars/Petbotson/dotfiles?style=for-the-badge&color=54b9fc">
