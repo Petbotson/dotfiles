@@ -108,7 +108,6 @@
     wget
     brave
     curl
-    zsh
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
