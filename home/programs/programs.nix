@@ -15,5 +15,6 @@
     # dev and infra stuff
     terraform
     hugo
+    packer
   ];
 }
