@@ -95,8 +95,7 @@
     isNormalUser = true;
     description = "Vincent Schwalbach";
     extraGroups = [ "networkmanager" "wheel" ];
-    packages = with pkgs; [
-    ];
+    shell = pkgs.zsh;
   };
 
   # Allow unfree packages
@@ -109,6 +108,7 @@
     wget
     brave
     curl
+    zsh
   ];
 
   # Some programs need SUID wrappers, can be configured further or are

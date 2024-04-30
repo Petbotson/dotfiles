@@ -12,7 +12,7 @@
 
 #    oh-my-zsh = {
 #      enable = true;
-#      plugins = [ "git" "terraform" ];
+#      plugins = [ "ansible" "docker" "docker-compose" "git" "terraform" ];
 #    };
-  };
+#  };
 }
