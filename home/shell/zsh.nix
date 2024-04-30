@@ -9,10 +9,5 @@
     shellAliases = {
       ll = "ls  -lah";
     };
-
-#    oh-my-zsh = {
-#      enable = true;
-#      plugins = [ "ansible" "docker" "docker-compose" "git" "terraform" ];
-#    };
   };
 }

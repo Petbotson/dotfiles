@@ -4,6 +4,7 @@
 
   imports = [
     ./dev
+    ./fonts.nix
     ./hypr
     ./programs
     ./shell
