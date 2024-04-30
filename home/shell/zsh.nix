@@ -14,5 +14,5 @@
 #      enable = true;
 #      plugins = [ "ansible" "docker" "docker-compose" "git" "terraform" ];
 #    };
-#  };
+  };
 }
