@@ -5,9 +5,12 @@
   imports = [
     ./dev
     ./fonts.nix
-    ./hypr
+    ./hyprland
+    ./mako.nix
     ./programs
     ./shell
+    ./waybar.nix
+    ./wofi.nix
   ];
 
   # Home Manager needs a bit of information about you and the
