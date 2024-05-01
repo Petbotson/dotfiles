@@ -5,7 +5,7 @@
   imports = [
     ./dev
     ./fonts.nix
-#    ./hypr
+    ./hypr
     ./programs
     ./shell
   ];
