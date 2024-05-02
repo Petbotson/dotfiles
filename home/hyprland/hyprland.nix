@@ -18,6 +18,8 @@
         "waybar &"
         "mako &"
       ];
+    };
+
     xwayland = {
       enable = true;
     };
