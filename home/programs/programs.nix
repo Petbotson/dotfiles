@@ -6,7 +6,7 @@
     which
     tree
     spotify
-    neofetch
+    fastfetch
     signal-desktop
     obsidian
     bitwarden-desktop
