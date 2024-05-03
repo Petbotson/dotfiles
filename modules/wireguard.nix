@@ -1,5 +1,5 @@
 { pkgs, ... }: {
-  networking.wg-quick.interfaces = let
+  networking.wireguard.interfaces = let
     server_ip = "192.168.178.254";
   in {
     wg0 = {
