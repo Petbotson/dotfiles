@@ -12,10 +12,10 @@
       listenPort = 51820;
 
       # Path to the private key file.
-      privateKeyFile = "/etc/mullvad-vpn.key";
+      privateKeyFile = "/etc/ssl/privkey/home-vpn.key";
 
       peers = [{
-        publicKey = "1493vtFUbIfSpQKRBki/1d0YgWIQwMV4AQAvGxjCNVM=";
+        publicKey = "ap8zG1OQKfFNlI52Wu54aCqNvlhiQSzSDPcUw5LIzHQ=";
         allowedIPs = [ "10.99.0.0/20" ];
         endpoint = "${server_ip}:51820";
         persistentKeepalive = 25;
