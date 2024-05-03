@@ -4,7 +4,7 @@
   in {
     wg0 = {
       # IP address of this machine in the *tunnel network*
-      address = [
+      ips = [
         "10.99.99.3/32"
       ];
 
