@@ -12,9 +12,10 @@
     bitwarden-desktop
     mailspring
 
-    # dev and infra stuff
-    terraform
+    # dev and coding stuff
+    ansible
     hugo
     packer
+    terraform
   ];
 }
