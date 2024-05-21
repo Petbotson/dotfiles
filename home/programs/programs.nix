@@ -17,6 +17,5 @@
     hugo
     packer
     terraform
-    warp-terminal
   ];
 }
