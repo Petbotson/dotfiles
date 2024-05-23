@@ -1,7 +1,7 @@
 {
   nix.settings = {
     substituters = [
-        "https://cache.nixos.org"
+        "https://cache.nixos.org?priority=10" ## increase priority to be used more
         "https://hyprland.cachix.org"
         "https://nix-community.cachix.org"
         "https://yazi.cachix.org"
