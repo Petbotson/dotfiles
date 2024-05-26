@@ -3,7 +3,7 @@
     server_ip = "192.168.178.254";
   in {
     wg0 = {
-      # IP address of this machine in the *tunnel network*
+      autostart = false;
       address = [
         "10.99.99.3/32"
       ];
