@@ -1,7 +1,7 @@
 { inputs, pkgs, stylix, ... }:
 {
   stylix = {
-    image = ../assets/wallpaper.jpg;
+    image = ../assets/wallpaper.png;
     polarity = "dark";
 
     base16Scheme = {
@@ -27,7 +27,7 @@
     cursor = {
       package = pkgs.bibata-cursors;
       name    = "Bibata-Modern-Ice";
-      size    = 32;
+      size    = 16;
     };
 
     fonts = {
