@@ -4,23 +4,23 @@
   programs.alacritty = {
     enable = true;
     settings = {
-      window = {
-        opacity = 0.95;
-        dynamic_padding = true;
-        padding = {
-          x = 5;
-          y = 5;
-        };
-      };
+#      window = {
+#        opacity = 0.95;
+#        dynamic_padding = true;
+#        padding = {
+#          x = 5;
+#          y = 5;
+#        };
+#      };
 
       scrolling.history = 10000;
 
-      font = {
-        normal.family = "JetBrains Mono";
-        bold.family = "JetBrains Mono";
-        italic.family = "JetBrains Mono";
-        size = 10;
-      };
+#      font = {
+#        normal.family = "JetBrains Mono";
+#        bold.family = "JetBrains Mono";
+#        italic.family = "JetBrains Mono";
+#        size = 10;
+#      };
 
 #      imports = [
 #        (pkgs.fetchurl {

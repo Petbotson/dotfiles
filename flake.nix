@@ -2,17 +2,25 @@
   description = "Petbotson's NixOS configuration";
 
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    nixpkgs = {
+      url = "github:nixos/nixpkgs/nixos-unstable";
+    };
+
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
     hyprland = {
       url = "github:hyprwm/Hyprland";
     };
+    
+    stylix = {
+      url = "github:danth/stylix";
+    };
   };
 
-  outputs = inputs@{ self, nixpkgs, home-manager, hyprland, ... }: {
+  outputs = inputs@{ self, nixpkgs, home-manager, stylix, ... }: {
     nixosConfigurations = {
       vs-nb = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
@@ -33,6 +41,7 @@
             };
             home-manager.users.vincent = import ./home;
           }
+          stylix.nixosModules.stylix
         ];
       };
     };
