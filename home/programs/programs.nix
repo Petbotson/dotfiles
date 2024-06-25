@@ -11,6 +11,7 @@
     obsidian
     bitwarden-desktop
     mailspring
+    flameshot
 
     # dev and coding stuff
     ansible
