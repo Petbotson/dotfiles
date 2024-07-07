@@ -18,5 +18,7 @@
     hugo
     packer
     terraform
+    kubectl
+    k9s
   ];
 }
