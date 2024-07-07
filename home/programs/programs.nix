@@ -20,5 +20,6 @@
     terraform
     kubectl
     k9s
+    kubernetes-helm
   ];
 }
