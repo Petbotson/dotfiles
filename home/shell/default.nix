@@ -6,6 +6,7 @@ in {
   imports = [
 #    ./oh-my-posh.nix
     ./starship.nix
+    ./tmux.nix
     ./yazi.nix
     ./zsh.nix
   ];
