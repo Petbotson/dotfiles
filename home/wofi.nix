@@ -26,7 +26,7 @@
 
     * {
         font-family: 'JetBrains Mono Nerd Font', monospace;
-        font-size: 14px;
+        font-size: 14;
     }
 
     /* Window */

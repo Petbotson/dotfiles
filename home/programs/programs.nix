@@ -10,7 +10,6 @@
     signal-desktop
     obsidian
     bitwarden-desktop
-    mailspring
     flameshot
 
     # dev and coding stuff
@@ -22,5 +21,6 @@
     k9s
     kubernetes-helm
     helmfile
+    k3sup
   ];
 }
