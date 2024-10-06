@@ -22,5 +22,6 @@
     kubernetes-helm
     helmfile
     k3sup
+    terraform-docs
   ];
 }
