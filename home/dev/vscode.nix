@@ -5,6 +5,8 @@
     extensions = with pkgs.vscode-extensions; [
       yzhang.markdown-all-in-one
       ms-vscode-remote.remote-ssh
+      zguolee.tabler-icons
+      redhat.vscode-yaml
     ];
    };
 }
