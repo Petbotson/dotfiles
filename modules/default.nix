@@ -6,6 +6,6 @@
     ./tailscale.nix
     ./tuxedo-rs.nix
     ./wayland.nix
-    ./wireguard.nix
+#   ./wireguard.nix
   ];
 }

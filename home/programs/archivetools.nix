@@ -1,7 +1,7 @@
 { lib, pkgs, ... }: {
   home.packages = with pkgs; [
     # archive tools
-    zip
+    # zip
     xz
     unzip
   ];

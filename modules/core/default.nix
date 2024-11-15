@@ -1,6 +1,6 @@
 {
   imports = [
-    ./firewall.nix
+  # ./firewall.nix
     ./nix
   ];
 }
